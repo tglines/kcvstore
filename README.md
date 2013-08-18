@@ -28,7 +28,7 @@ to disk upon every change (set,del)
 
 Also note that the slice operator searches through a key in O(n) time which may not be desired.
 
-Choice of data strucgtures
+Choice of data structures
 --------------------------
 Since the store is primarily supposed to work like a hash table, with keys occuring only once
 and reads being much more common than writes.  I used python's dictionary data structure
