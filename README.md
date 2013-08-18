@@ -46,3 +46,25 @@ so it inherits some of the requested attributes:
     * all keys, columns, and values will be strings of variable length
     * errors shouldn't be raised if a nonexistent key/column is accessed,
         empty lists / None values should be returned
+
+Test Results
+------------
+
+    $ ./test.sh
+    problem1_tests.test_set_get ... ok
+    problem1_tests.test_nonexistent ... ok
+    problem1_tests.test_overwriting ... ok
+    problem1_tests.test_deleting ... ok
+    problem2_tests.test_slicing ... ok
+    problem3_tests.test_persistance ... ok
+    problem4_tests.test_set ... ok
+    problem4_tests.test_get ... ok
+    problem4_tests.test_nonexistant_get ... ok
+    problem4_tests.test_delete ... ok
+    problem4_tests.test_slice ... ok
+    problem4_tests.test_delete_key ... ok
+
+    ----------------------------------------------------------------------
+    Ran 12 tests in 0.331s
+
+    OK
