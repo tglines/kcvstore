@@ -27,6 +27,8 @@ Note that the disk persistence is fairly ineffecient as it dumps the entire kv s
 to disk upon every change (set,del) 
 
 Also note that the slice operator searches through a key in O(n) time which may not be desired.
+I was thinking the most ideal case to handle the slices would probably be a binary tree under the 
+key hash table as opposed to another hash table.  This would speed the lookup time to O(log n).
 
 Choice of data structures
 --------------------------
