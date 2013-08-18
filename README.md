@@ -1,5 +1,14 @@
+Simple Key Column Value Store
+=============================
+
+A few notes:
+
+Style
+-----
 Used underscores inside the kcvstore class because they are implementation details
 
+Confusion Points
+----------------
 The tests assume that the get function is overloaded
 -> and can take 1 or 2 args, I've handled this by default argument values
 -> it crossed my mind that this could be a mistake in the test
@@ -9,5 +18,10 @@ The tests assume that the get function is overloaded
 -> Seeing the parallel in delete with delete and delete_key I assume that the test writer
 -> has maken the mistake of including get with only one argument in the test cases.
 
-note that the disk persistence is fairly ineffecient as it dumps the entire kv store
+Comments on Effeciency
+----------------------
+
+Note that the disk persistence is fairly ineffecient as it dumps the entire kv store
 -> to disk upon every change (set,del) 
+
+Also note that the slice operator searches through a key in O(n) time which may not be desired.
