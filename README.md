@@ -20,6 +20,9 @@ This is the reason why get_key and get with only one argument case are exactly t
 Seeing the parallel in delete with delete and delete_key I assume that the test writer
 has maken the mistake of including get with only one argument in the test cases.
 
+For referene it appears only once, on line 115 of the problems.txt:
+        store.get('z') == []
+
 Effeciency
 ----------
 
