@@ -7,6 +7,18 @@ Style
 -----
 Used underscores inside the kcvstore class because they are implementation details
 
+REST API
+--------
+
+    # REST URL Structure
+    # GET / -> performs store.get_keys() ... this way it's sort of a directory to the kv store
+    # GET /key -> performs store.get(key)
+    # GET /key/col -> performs store.get(key,col)
+    # GET /key/start/stop -> performs store.get_slice(key, start, stop) ... not truly rest but convenient
+    # POST /key/col/val -> performs store.set(key,col,val)
+    # DELETE /key -> performs store.delete_key(key)
+    # DELETE /key/col -> performs store.delete(key,col)
+
 Confusion Points
 ----------------
 The tests assume that the get function is overloaded
