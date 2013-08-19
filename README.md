@@ -54,6 +54,13 @@ so it inherits some of the requested attributes:
 Test Results
 ------------
 
+Using nose in test.sh:
+
+    #!/bin/bash
+    nosetests -v 
+
+Actually running:
+
     $ ./test.sh
     problem1_tests.test_set_get ... ok
     problem1_tests.test_nonexistent ... ok
