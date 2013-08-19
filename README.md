@@ -24,7 +24,7 @@ For referene it appears only once, on line 115 of the problems.txt:
 
     store.get('z') == []
 
-Effeciency
+Efficiency
 ----------
 
 Note that the disk persistence is fairly ineffecient as it dumps the entire kv store 
